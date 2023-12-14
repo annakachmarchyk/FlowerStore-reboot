@@ -64,5 +64,4 @@ public class Tests {
 
         assertFalse(deletedUser.isPresent());
     }
-
 }

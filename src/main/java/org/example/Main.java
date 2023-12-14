@@ -20,7 +20,6 @@ public class Main {
         if (foundUser.isPresent()) {
             System.out.println("User found: " + foundUser.get().getEmail());
 
-            // Deleting the found user
             foundUser.get().deleteUserFromDB();
             System.out.println("User deleted: " + foundUser.get().getEmail());
         } else {

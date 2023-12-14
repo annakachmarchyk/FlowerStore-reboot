@@ -137,17 +137,14 @@ public class AppUser {
         }
     }
 
-    // Getter using @Transient
     @Transient
     public LocalDate getDob() {
         return dob;
     }
 
-    // New method for calculating age
-    public int calculateAge() {
+    public int calculateDob() {
         LocalDate now = LocalDate.now();
         return Period.between(this.dob, now).getYears();
     }
 
-    // Main method for testing
 }
